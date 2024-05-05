@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mysql:5.7
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_DATABASE: fitness_centre
+      MYSQL_USER: lisaveta
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: 12345
+    ports:
+      - 3305:3306
+    volumes:
+      - my-db:/var/lib/mysql
+volumes:
+  my-db:

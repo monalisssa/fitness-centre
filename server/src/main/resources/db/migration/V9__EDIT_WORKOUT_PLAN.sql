@@ -1,0 +1,1 @@
+ALTER TABLE workout MODIFY workout_plan_id BIGINT NULL;
